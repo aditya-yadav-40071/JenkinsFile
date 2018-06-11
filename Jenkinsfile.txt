@@ -1,0 +1,9 @@
+pipeline{
+  agent any
+  stages{
+     stage('My first script'){
+	echo "Hello World"
+       }
+    }
+ }
+
