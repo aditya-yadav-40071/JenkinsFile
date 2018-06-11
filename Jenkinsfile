@@ -3,7 +3,7 @@ pipeline{
   stages{
      stage('My first script'){
 	steps{
-          sh pwd
+          sh sudo pwd
 	  echo "Hello World"
 	  }
        }
