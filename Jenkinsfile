@@ -1,10 +1,14 @@
 pipeline{
   agent any
+  tools{
+ 	maven 'Maven 3.3.9'
+        jdk 'jdk8'
+      }
   stages{
-     stage('My first script'){
+     stage('Display Java home and Maven Home'){
 	steps{
-	  echo pwd
-	  sh 'echo step1'
+	  echo $JAVA_HOME
+	  echo MAVEN_HOME
 	  echo "Hello World"
 	  }
        }
