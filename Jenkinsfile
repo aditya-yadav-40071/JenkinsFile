@@ -1,8 +1,8 @@
 pipeline {
   agent any
   tools{
- 	maven 'Maven 3.3.9'
-        jdk 'jdk8'
+ 	maven 'LocalMaven'
+        jdk 'LocalJDK8'
       }
   stages{
      stage('Display Java home and Maven Home'){
