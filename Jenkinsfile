@@ -7,11 +7,9 @@ pipeline {
   stages{
      stage('Display Java home and Maven Home'){
 	steps{
-          sh '''
-	   echo ${JAVA_HOME}
-	   echo ${MAVEN_HOME}
+	   sh 'echo ${JAVA_HOME}'
+	   sh 'echo ${MAVEN_HOME}'
 	   echo "Hello World"
-          '''
 	  }
        }
    }
